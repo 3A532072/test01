@@ -21,7 +21,6 @@ class CreateStoresTable extends Migration
             $table->string('region');
             $table->string('phone');
             $table->string('businesshour');
-            $table->timestamps();
         });
     }
 
