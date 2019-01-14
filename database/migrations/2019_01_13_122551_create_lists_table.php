@@ -16,6 +16,11 @@ class CreateListsTable extends Migration
         Schema::create('lists', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('product_id');
+            $table->string('size');
+            $table->string('temprate');
+            $table->string('ice');
+            $table->string('sweet');
+            $table->integer('number');
             $table->timestamps();
         });
     }
