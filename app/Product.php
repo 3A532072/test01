@@ -11,6 +11,6 @@ class Product extends Model
 		,'price'];
 		public function orders()
 		{
-			return $this->belongsTo('App/Order');
+			return $this->hasMany('App/Order');
 		}
 	}

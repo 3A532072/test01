@@ -10,14 +10,14 @@ class Order extends Model
 
     public function users()
     {
-        return $this->hasMany('App/User');
+        return $this->belongsTo('App/User');
     }
     public function stores()
     {
-        return $this->hasMany('App/Store');
+        return $this->belongsTo('App/Store');
     }
     public function lists()
     {
-        return $this->hasMany('App/BeverageList');
+        return $this->belongsTo('App/BeverageList','beveragelist_id');
     }
 }
