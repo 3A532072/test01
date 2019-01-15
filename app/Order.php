@@ -18,6 +18,6 @@ class Order extends Model
     }
     public function lists()
     {
-        return $this->hasMany('App/List');
+        return $this->hasMany('App/BeverageList');
     }
 }
